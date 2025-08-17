@@ -37,6 +37,8 @@ jobs:
       - name: Build project
         working-directory: ./portfolio
         run: npm run build
+        env:
+          GITHUB_PAGES: true
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -56,4 +58,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
