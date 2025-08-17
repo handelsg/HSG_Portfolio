@@ -41,6 +41,17 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       // Skills
       'skills.title': 'Habilidades Técnicas',
       'skills.subtitle': 'Tecnologias que domino',
+      'skills.frontend': 'Frontend Development',
+      'skills.backend': 'Backend Development',
+      'skills.database': 'Database & Cloud',
+      'skills.ai': 'AI & Emerging Tech',
+      'skills.tools': 'Tools & Others',
+      'skills.overview': 'Visão Geral das Habilidades',
+      'skills.languages': 'Linguagens de Programação',
+      'skills.frameworks': 'Frameworks & Bibliotecas',
+      'skills.technologies': 'Tecnologias Dominadas',
+      'skills.experience': 'Anos de Experiência',
+      'skills.proficiency': 'Proficiência',
       
       // Experience
       'experience.title': 'Experiência Profissional',
@@ -50,11 +61,38 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       'experience.certifications': 'Certificações Microsoft e AWS',
       'experience.courses': 'Cursos especializados em desenvolvimento',
       
+      // Experience Details
+      'experience.banese.position': 'Desenvolvedor Front-end',
+      'experience.banese.period': 'Jul 2024 - Presente',
+      'experience.banese.desc1': 'Desenvolvimento de aplicações web de alta performance utilizando React e Next.js',
+      'experience.banese.desc2': 'Atuação em ambiente ágil com metodologias Scrum',
+      'experience.banese.desc3': 'Tomada de decisões sobre arquitetura de software para soluções escaláveis',
+      'experience.banese.desc4': 'Tradução de conceitos financeiros complexos do Open Finance em interfaces intuitivas',
+      'experience.banese.desc5': 'Colaboração com stakeholders para alinhar desenvolvimento às prioridades da empresa',
+      
+      'experience.baneselabes.position': 'Pesquisador e Desenvolvedor em IA',
+      'experience.baneselabes.period': 'Jan 2024 - Jul 2024',
+      'experience.baneselabes.desc1': 'Estudo aprofundado em redes neurais e modelos de linguagem',
+      'experience.baneselabes.desc2': 'Aplicação prática de IA generativa em projeto inovador',
+      'experience.baneselabes.desc3': 'Desenvolvimento de interfaces dinâmicas com React para integração com IA',
+      'experience.baneselabes.desc4': 'Consolidação de conhecimento em tecnologias emergentes',
+      
+      'experience.ssp.position': 'Desenvolvedor Full Stack',
+      'experience.ssp.period': 'Jan 2023 - Dez 2023',
+      'experience.ssp.desc1': 'Desenvolvimento e manutenção de sistemas utilizando .NET, C# e Angular',
+      'experience.ssp.desc2': 'Criação de sistemas integrados para otimizar processos críticos da gestão pública',
+      'experience.ssp.desc3': 'Implementação de novas funcionalidades e otimização de performance',
+      'experience.ssp.desc4': 'Trabalho colaborativo com equipes multidisciplinares',
+      
       // Projects
       'projects.title': 'Projetos em Destaque',
       'projects.subtitle': 'Alguns dos meus trabalhos mais recentes',
       'projects.viewCode': 'Ver Código',
       'projects.liveDemo': 'Demo',
+      
+      // TCC Project
+      'projects.tcc.title': 'Sistema de Geração de Artefatos Ágeis com IA Generativa',
+      'projects.tcc.description': 'Sistema desenvolvido como TCC que utiliza IA Generativa para automatizar a criação de artefatos ágeis como resumos de reuniões, geração de user stories e criação de tasks a partir de discussões.',
       
       // Contact
       'contact.title': 'Contato',
@@ -103,6 +141,17 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       // Skills
       'skills.title': 'Technical Skills',
       'skills.subtitle': 'Technologies I master',
+      'skills.frontend': 'Frontend Development',
+      'skills.backend': 'Backend Development',
+      'skills.database': 'Database & Cloud',
+      'skills.ai': 'AI & Emerging Tech',
+      'skills.tools': 'Tools & Others',
+      'skills.overview': 'Skills Overview',
+      'skills.languages': 'Programming Languages',
+      'skills.frameworks': 'Frameworks & Libraries',
+      'skills.technologies': 'Technologies Mastered',
+      'skills.experience': 'Years of Experience',
+      'skills.proficiency': 'Proficiency',
       
       // Experience
       'experience.title': 'Professional Experience',
@@ -112,11 +161,38 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       'experience.certifications': 'Google Cloud Skills Boost Certifications',
       'experience.courses': 'NASA Space Apps Challenge 2022 & 2023 - Winner of Regional Challenge',
       
+      // Experience Details
+      'experience.banese.position': 'Front-end Developer',
+      'experience.banese.period': 'Jul 2024 - Present',
+      'experience.banese.desc1': 'Development of high-performance web applications using React and Next.js',
+      'experience.banese.desc2': 'Working in agile environments with Scrum methodologies',
+      'experience.banese.desc3': 'Making architectural decisions for scalable software solutions',
+      'experience.banese.desc4': 'Translating complex Open Finance financial concepts into intuitive interfaces',
+      'experience.banese.desc5': 'Collaborating with stakeholders to align development with company priorities',
+      
+      'experience.baneselabes.position': 'AI Researcher and Developer',
+      'experience.baneselabes.period': 'Jan 2024 - Jul 2024',
+      'experience.baneselabes.desc1': 'In-depth study of neural networks and language models',
+      'experience.baneselabes.desc2': 'Practical application of generative AI in innovative projects',
+      'experience.baneselabes.desc3': 'Development of dynamic interfaces with React for AI integration',
+      'experience.baneselabes.desc4': 'Consolidation of knowledge in emerging technologies',
+      
+      'experience.ssp.position': 'Full Stack Developer',
+      'experience.ssp.period': 'Jan 2023 - Dec 2023',
+      'experience.ssp.desc1': 'Development and maintenance of systems using .NET, C# and Angular',
+      'experience.ssp.desc2': 'Creation of integrated systems to optimize critical public management processes',
+      'experience.ssp.desc3': 'Implementation of new features and performance optimization',
+      'experience.ssp.desc4': 'Collaborative work with multidisciplinary teams',
+      
       // Projects
       'projects.title': 'Featured Projects',
       'projects.subtitle': 'Some of my recent work',
       'projects.viewCode': 'View Code',
       'projects.liveDemo': 'Live Demo',
+      
+      // TCC Project
+      'projects.tcc.title': 'Agile Artifacts Generation System with Generative AI',
+      'projects.tcc.description': 'System developed as a final thesis project that uses Generative AI to automate the creation of agile artifacts such as meeting summaries, user story generation, and task creation from discussions.',
       
       // Contact
       'contact.title': 'Contact',

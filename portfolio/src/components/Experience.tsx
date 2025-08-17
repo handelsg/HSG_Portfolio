@@ -21,40 +21,40 @@ const Experience: React.FC = () => {
     {
       id: 'banese-dev',
       company: 'Banese',
-      position: 'Desenvolvedor Front-end',
-      period: 'Jul 2024 - Presente',
+      position: t('experience.banese.position'),
+      period: t('experience.banese.period'),
       description: [
-        'Desenvolvimento de aplicações web de alta performance utilizando React e Next.js',
-        'Atuação em ambiente ágil com metodologias Scrum',
-        'Tomada de decisões sobre arquitetura de software para soluções escaláveis',
-        'Tradução de conceitos financeiros complexos do Open Finance em interfaces intuitivas',
-        'Colaboração com stakeholders para alinhar desenvolvimento às prioridades da empresa'
+        t('experience.banese.desc1'),
+        t('experience.banese.desc2'),
+        t('experience.banese.desc3'),
+        t('experience.banese.desc4'),
+        t('experience.banese.desc5')
       ],
       technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Scrum']
     },
     {
       id: 'banese-ai',
       company: 'BaneseLABES',
-      position: 'Pesquisador e Desenvolvedor em IA',
-      period: 'Jan 2024 - Jul 2024',
+      position: t('experience.baneselabes.position'),
+      period: t('experience.baneselabes.period'),
       description: [
-        'Estudo aprofundado em redes neurais e modelos de linguagem',
-        'Aplicação prática de IA generativa em projeto inovador',
-        'Desenvolvimento de interfaces dinâmicas com React para integração com IA',
-        'Consolidação de conhecimento em tecnologias emergentes'
+        t('experience.baneselabes.desc1'),
+        t('experience.baneselabes.desc2'),
+        t('experience.baneselabes.desc3'),
+        t('experience.baneselabes.desc4')
       ],
       technologies: ['Python', 'TensorFlow', 'AI/ML', 'React', 'Neural Networks']
     },
     {
       id: 'ssp-se',
       company: 'Secretaria de Segurança Pública - SE',
-      position: 'Desenvolvedor Full Stack',
-      period: 'Jan 2023 - Dez 2023',
+      position: t('experience.ssp.position'),
+      period: t('experience.ssp.period'),
       description: [
-        'Desenvolvimento e manutenção de sistemas utilizando .NET, C# e Angular',
-        'Criação de sistemas integrados para otimizar processos críticos da gestão pública',
-        'Implementação de novas funcionalidades e otimização de performance',
-        'Trabalho colaborativo com equipes multidisciplinares'
+        t('experience.ssp.desc1'),
+        t('experience.ssp.desc2'),
+        t('experience.ssp.desc3'),
+        t('experience.ssp.desc4')
       ],
       technologies: ['C#', '.NET', 'Angular', 'SQL Server', 'JavaScript']
     }
