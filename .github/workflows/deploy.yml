@@ -34,11 +34,13 @@ jobs:
         working-directory: ./portfolio
         run: npm ci
         
+      - name: Copy GitHub Pages config
+        working-directory: ./portfolio
+        run: cp next.config.github.ts next.config.ts
+        
       - name: Build project
         working-directory: ./portfolio
         run: npm run build
-        env:
-          GITHUB_PAGES: true
         
       - name: Setup Pages
         uses: actions/configure-pages@v4

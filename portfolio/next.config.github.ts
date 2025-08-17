@@ -1,11 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // For Vercel deployment, we don't need static export
+  output: 'export',
   trailingSlash: true,
   images: {
     unoptimized: true
-  }
+  },
+  basePath: '/HSG_Portfolio',
+  assetPrefix: '/HSG_Portfolio/',
 };
 
 export default nextConfig;

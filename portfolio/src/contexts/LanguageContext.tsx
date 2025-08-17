@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useMemo } from 'react';
+import React, { createContext, useContext, useState, useMemo, useCallback } from 'react';
 
 interface LanguageContextType {
   language: 'pt' | 'en';
@@ -216,15 +216,15 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
   };
 
-  const t = (key: string): string => {
+  const t = useCallback((key: string): string => {
     return translations[language][key as keyof typeof translations[typeof language]] || key;
-  };
+  }, [language]);
 
   const value = useMemo(() => ({
     language,
     setLanguage,
     t
-  }), [language]);
+  }), [language, setLanguage, t]);
 
   return (
     <LanguageContext.Provider value={value}>
