@@ -7,8 +7,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 interface Skill {
   name: string;
-  level: number;
-  icon: string;
+  icon: React.ReactNode;
   color: string;
 }
 
@@ -24,49 +23,165 @@ const Skills: React.FC = () => {
     {
       category: t('skills.frontend'),
       skills: [
-        { name: 'React', level: 90, icon: '⚛️', color: 'from-blue-500 to-cyan-500' },
-        { name: 'Next.js', level: 85, icon: '▲', color: 'from-gray-800 to-gray-600' },
-        { name: 'TypeScript', level: 85, icon: '📘', color: 'from-blue-600 to-blue-700' },
-        { name: 'JavaScript', level: 95, icon: '🟨', color: 'from-yellow-500 to-orange-500' },
-        { name: 'TailwindCSS', level: 90, icon: '🎨', color: 'from-teal-400 to-blue-500' },
-        { name: 'Angular', level: 75, icon: '🅰️', color: 'from-red-600 to-red-700' },
+        { 
+          name: 'React', 
+          icon: <i className="devicon-react-original text-3xl"></i>, 
+          color: 'from-blue-500 to-cyan-500' 
+        },
+        { 
+          name: 'Next.js', 
+          icon: <i className="devicon-nextjs-plain text-3xl"></i>, 
+          color: 'from-gray-800 to-gray-600' 
+        },
+        { 
+          name: 'TypeScript', 
+          icon: <i className="devicon-typescript-original text-3xl"></i>, 
+          color: 'from-blue-600 to-blue-700' 
+        },
+        { 
+          name: 'JavaScript', 
+          icon: <i className="devicon-javascript-plain text-3xl"></i>, 
+          color: 'from-yellow-500 to-orange-500' 
+        },
+        { 
+          name: 'TailwindCSS', 
+          icon: <i className="devicon-tailwindcss-original text-3xl"></i>, 
+          color: 'from-teal-400 to-blue-500' 
+        },
+        { 
+          name: 'Angular', 
+          icon: <i className="devicon-angular-plain text-3xl text-white"></i>, 
+          color: 'from-red-600 to-red-700' 
+        },
       ]
     },
     {
       category: t('skills.backend'),
       skills: [
-        { name: 'C#', level: 85, icon: '🔷', color: 'from-purple-600 to-purple-700' },
-        { name: '.NET', level: 80, icon: '🟣', color: 'from-indigo-600 to-purple-600' },
-        { name: 'Python', level: 75, icon: '🐍', color: 'from-green-600 to-blue-600' },
-        { name: 'Node.js', level: 70, icon: '🟢', color: 'from-green-500 to-green-600' },
-        { name: 'FastAPI', level: 75, icon: '⚡', color: 'from-teal-500 to-green-500' },
+        { 
+          name: 'C#', 
+          icon: <i className="devicon-csharp-plain text-3xl text-white"></i>, 
+          color: 'from-purple-600 to-purple-700' 
+        },
+        { 
+          name: '.NET', 
+          icon: <i className="devicon-dot-net-plain text-3xl text-white"></i>, 
+          color: 'from-indigo-600 to-purple-600' 
+        },
+        { 
+          name: 'Python', 
+          icon: <i className="devicon-python-plain text-3xl text-white"></i>, 
+          color: 'from-green-600 to-blue-600' 
+        },
+        { 
+          name: 'Node.js', 
+          icon: <i className="devicon-nodejs-plain text-3xl text-white"></i>, 
+          color: 'from-green-500 to-green-600' 
+        },
+        { 
+          name: 'FastAPI', 
+          icon: <i className="devicon-fastapi-plain text-3xl text-white"></i>, 
+          color: 'from-teal-500 to-green-500' 
+        },
       ]
     },
     {
       category: t('skills.database'),
       skills: [
-        { name: 'SQL Server', level: 80, icon: '🗄️', color: 'from-red-500 to-orange-500' },
-        { name: 'MongoDB', level: 75, icon: '🍃', color: 'from-green-500 to-green-600' },
-        { name: 'Redis', level: 65, icon: '🔴', color: 'from-red-500 to-red-600' },
-        { name: 'Docker', level: 70, icon: '🐳', color: 'from-blue-500 to-blue-600' },
+        { 
+          name: 'SQL Server', 
+          icon: <i className="devicon-microsoftsqlserver-original text-3xl"></i>, 
+          color: 'from-red-500 to-orange-500' 
+        },
+        { 
+          name: 'MongoDB', 
+          icon: <i className="devicon-mongodb-original text-3xl"></i>, 
+          color: 'from-green-500 to-green-600' 
+        },
+        { 
+          name: 'Redis', 
+          icon: <i className="devicon-redis-original text-3xl"></i>, 
+          color: 'from-red-500 to-red-600' 
+        },
+        { 
+          name: 'Docker', 
+          icon: <i className="devicon-docker-original text-3xl"></i>, 
+          color: 'from-blue-500 to-blue-600' 
+        },
       ]
     },
     {
       category: t('skills.ai'),
       skills: [
-        { name: 'AI/ML', level: 75, icon: '🧠', color: 'from-purple-500 to-pink-500' },
-        { name: 'TensorFlow', level: 70, icon: '🔥', color: 'from-orange-500 to-red-500' },
-        { name: 'Neural Networks', level: 70, icon: '🕸️', color: 'from-purple-600 to-blue-600' },
-        { name: 'Generative AI', level: 75, icon: '✨', color: 'from-pink-500 to-purple-500' },
+        { 
+          name: 'AI/ML', 
+          icon: (
+            <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          ), 
+          color: 'from-purple-500 to-pink-500' 
+        },
+        { 
+          name: 'TensorFlow', 
+          icon: <i className="devicon-tensorflow-original text-3xl"></i>, 
+          color: 'from-orange-500 to-red-500' 
+        },
+        { 
+          name: 'Neural Networks', 
+          icon: (
+            <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+          ), 
+          color: 'from-purple-600 to-blue-600' 
+        },
+        { 
+          name: 'Generative AI', 
+          icon: (
+            <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.09 6.26L20 9.27l-5 4.87 1.18 6.88L12 17.77l-4.18 3.25L9 14.14 4 9.27l5.91-1.01L12 2z"/>
+            </svg>
+          ), 
+          color: 'from-pink-500 to-purple-500' 
+        },
       ]
     },
     {
       category: t('skills.tools'),
       skills: [
-        { name: 'Git', level: 90, icon: '📚', color: 'from-orange-500 to-red-500' },
-        { name: 'UI/UX Design', level: 80, icon: '🎨', color: 'from-pink-500 to-purple-500' },
-        { name: 'PWA', level: 75, icon: '📱', color: 'from-indigo-500 to-purple-500' },
-        { name: 'Scrum', level: 85, icon: '🔄', color: 'from-green-500 to-teal-500' },
+        { 
+          name: 'Git', 
+          icon: <i className="devicon-git-original text-3xl"></i>, 
+          color: 'from-orange-500 to-red-500' 
+        },
+        { 
+          name: 'UI/UX Design', 
+          icon: (
+            <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          ), 
+          color: 'from-pink-500 to-purple-500' 
+        },
+        { 
+          name: 'PWA', 
+          icon: (
+            <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+          ), 
+          color: 'from-indigo-500 to-purple-500' 
+        },
+        { 
+          name: 'Scrum', 
+          icon: (
+            <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l2.09 6.26L20 9.27l-5 4.87 1.18 6.88L12 17.77l-4.18 3.25L9 14.14 4 9.27l5.91-1.01L12 2z"/>
+            </svg>
+          ), 
+          color: 'from-green-500 to-teal-500' 
+        },
       ]
     }
   ];
@@ -91,31 +206,14 @@ const Skills: React.FC = () => {
                     className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2"
                     style={{ animationDelay: `${0.1 * skillIndex}s` }}
                   >
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="flex items-center">
-                        <span className="text-3xl mr-3">{skill.icon}</span>
-                        <div>
-                          <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
-                            {skill.name}
-                          </h4>
-                          <span className="text-sm text-gray-500 dark:text-gray-400">
-                            {skill.level}% {t('skills.proficiency')}
-                          </span>
-                        </div>
+                    <div className="flex items-center">
+                      <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${skill.color} flex items-center justify-center text-white mr-4`}>
+                        {skill.icon}
                       </div>
-                    </div>
-                    
-                    <div className="relative">
-                      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
-                        <div 
-                          className={`bg-gradient-to-r ${skill.color} h-full rounded-full transition-all duration-1000 ease-out relative`}
-                          style={{ 
-                            width: `${skill.level}%`,
-                            animationDelay: `${0.5 + 0.1 * skillIndex}s`
-                          }}
-                        >
-                          <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
-                        </div>
+                      <div>
+                        <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
+                          {skill.name}
+                        </h4>
                       </div>
                     </div>
                   </div>

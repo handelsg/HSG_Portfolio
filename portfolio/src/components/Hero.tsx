@@ -1,11 +1,13 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
+import Image from 'next/image';
 import AnimatedSection from './AnimatedSection';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Hero: React.FC = () => {
   const { t } = useLanguage();
+  const [imageError, setImageError] = useState(false);
   
   return (
     <section id="inicio" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 to-emerald-100 dark:from-gray-900 dark:to-gray-800">
@@ -13,8 +15,21 @@ const Hero: React.FC = () => {
         <div className="text-center">
           <AnimatedSection direction="fade" delay={0.2}>
             <div className="mb-8">
-              <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-green-500 to-emerald-600 flex items-center justify-center text-white text-4xl font-bold">
-                HSG
+              <div className="w-32 h-32 mx-auto rounded-full overflow-hidden bg-gradient-to-r from-green-500 to-emerald-600 p-1">
+                {!imageError ? (
+                  <Image 
+                    src="/profile-photo.jpeg" 
+                    alt="Handel Santana - Desenvolvedor Full Stack"
+                    width={128}
+                    height={128}
+                    className="w-full h-full rounded-full object-cover bg-white"
+                    onError={() => setImageError(true)}
+                  />
+                ) : (
+                  <div className="w-full h-full rounded-full bg-gradient-to-r from-green-500 to-emerald-600 flex items-center justify-center text-white text-4xl font-bold">
+                    HS
+                  </div>
+                )}
               </div>
             </div>
           </AnimatedSection>
