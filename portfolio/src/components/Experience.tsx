@@ -56,7 +56,7 @@ const Experience: React.FC = () => {
         t('experience.ssp.desc3'),
         t('experience.ssp.desc4')
       ],
-      technologies: ['C#', '.NET', 'Angular', 'SQL Server', 'JavaScript']
+      technologies: ['C#', '.NET', 'React', 'Angular', 'SQL Server', 'JavaScript']
     }
   ];
 

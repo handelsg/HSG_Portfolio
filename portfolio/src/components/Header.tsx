@@ -39,7 +39,7 @@ const Header: React.FC = () => {
           <div className="hidden md:flex items-center space-x-8">
             <div className="flex space-x-8">
               {[
-                { key: 'inicio', label: 'Início' },
+                { key: 'inicio', label: t('nav.home') },
                 { key: 'sobre', label: t('nav.about') },
                 { key: 'skills', label: t('nav.skills') },
                 { key: 'experiencia', label: t('nav.experience') },
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
                 <a 
                   key={item.key}
                   href={`#${item.key}`} 
-                  className="text-gray-600 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-400 transition-colors capitalize relative group"
+                  className="text-gray-600 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-400 transition-colors capitalize relative group min-w-[80px] text-center"
                 >
                   {item.label}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
           <div className="md:hidden py-4 border-t border-gray-200 dark:border-gray-700">
             <div className="flex flex-col space-y-2">
               {[
-                { key: 'inicio', label: 'Início' },
+                { key: 'inicio', label: t('nav.home') },
                 { key: 'sobre', label: t('nav.about') },
                 { key: 'skills', label: t('nav.skills') },
                 { key: 'experiencia', label: t('nav.experience') },

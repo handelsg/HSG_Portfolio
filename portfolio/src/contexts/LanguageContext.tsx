@@ -25,7 +25,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       
       // Hero
       'hero.greeting': 'Olá, eu sou',
-      'hero.description': 'Desenvolvedor Full Stack apaixonado por criar soluções inovadoras e interfaces elegantes.',
+      'hero.description': 'Sou um desenvolvedor Fullstack dinâmico e orientado para resultados, do Brasil, com foco em desenvolvimento front-end. Estou procurando uma função desafiadora onde possa aplicar minha experiência em projetar, construir e implementar soluções de software inovadoras.',
       'hero.viewProjects': 'Ver Projetos',
       'hero.contact': 'Entre em Contato',
       
@@ -111,6 +111,11 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       'contact.form.messagePlaceholder': 'Sua mensagem...',
       
       // Footer
+      'footer.description': 'Desenvolvedor Full Stack comprometido em entregar soluções eficientes e inovadoras, combinando tecnologia e usabilidade em aplicações robustas e escaláveis.',
+      'footer.quickLinks': 'Links Rápidos',
+      'footer.contact': 'Contato',
+      'footer.location': 'Aracaju, Sergipe - Brasil',
+      'footer.rights': 'Todos os direitos reservados.',
       'footer.madeWith': 'Feito com',
       'footer.by': 'por',
     },
@@ -211,6 +216,11 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       'contact.form.messagePlaceholder': 'Your message...',
       
       // Footer
+      'footer.description': 'Full Stack Developer committed to delivering efficient and innovative solutions, combining technology and usability in robust and scalable applications.',
+      'footer.quickLinks': 'Quick Links',
+      'footer.contact': 'Contact',
+      'footer.location': 'Aracaju, Sergipe - Brazil',
+      'footer.rights': 'All rights reserved.',
       'footer.madeWith': 'Made with',
       'footer.by': 'by',
     }
