@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
               <div className="w-32 h-32 mx-auto rounded-full overflow-hidden bg-gradient-to-r from-green-500 to-emerald-600 p-1">
                 {!imageError ? (
                   <Image 
-                    src="/profile-photo.jpeg" 
+                    src="/HSG_Portfolio/profile-photo.jpeg" 
                     alt="Handel Santana - Desenvolvedor Full Stack"
                     width={128}
                     height={128}

@@ -5,7 +5,9 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  }
+  },
+  basePath: '/HSG_Portfolio',
+  assetPrefix: '/HSG_Portfolio'
 };
 
 export default nextConfig;
